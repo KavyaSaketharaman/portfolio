@@ -1,6 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import './ProjectsModal.css';
 
+
+import agaram1 from '../images/agaram1.png';
+import agaram2 from '../images/agaram2.png';
+import agaram4 from '../images/agaram4.png';
+import ben1 from '../images/ben1.jpg';
+import ben2 from '../images/ben2.jpg';
+import bn3 from '../images/bn3.jpg';
+import ben4 from '../images/ben4.jpg';
+import ben5 from '../images/ben5.jpg';
+import ben6 from '../images/ben6.jpg';
+// Note: If file is named "clo1 (1).png" with space, you need to rename it to clo1.png
+// OR import it like: import clo1 from '../images/clo1 (1).png';
+import clo1 from '../images/clo1 (1).png';
+import clo2 from '../images/clo2.png';
+import clo3 from '../images/clo3.png';
+import clo4 from '../images/clo4.png';
+
 const ProjectsModal = ({ onClose }) => {
     const [activeTab, setActiveTab] = useState('tab1-wrapper');
 
@@ -71,9 +88,9 @@ const ProjectsModal = ({ onClose }) => {
                             </div>
                         </div>
                         <div id="tab1-p" className="paper right">
-                            <p><img src="/images/agaram1.png" width="375" alt="Agaram Screenshot 1" /></p>
-                            <p><img src="/images/agaram2.png" width="375" alt="Agaram Screenshot 2" /></p>
-                            <p><img src="/images/agaram4.png" width="375" alt="Agaram Screenshot 3" /></p>
+                            <p><img src={agaram1} width="375" alt="Agaram Screenshot 1" /></p>
+                            <p><img src={agaram2} width="375" alt="Agaram Screenshot 2" /></p>
+                            <p><img src={agaram4} width="375" alt="Agaram Screenshot 3" /></p>
                         </div>
                     </div>
 
@@ -95,12 +112,12 @@ const ProjectsModal = ({ onClose }) => {
                         </div>
                         <div id="tab2-p" className="paper right">
                             <div className="image-grid">
-                                <img src="/images/ben6.jpg" width="100" alt="Benkyozer Screen 1" />
-                                <img src="/images/ben1.jpg" width="100" alt="Benkyozer Screen 2" />
-                                <img src="/images/ben2.jpg" width="100" alt="Benkyozer Screen 3" />
-                                <img src="/images/bn3.jpg" width="100" alt="Benkyozer Screen 4" />
-                                <img src="/images/ben4.jpg" width="100" alt="Benkyozer Screen 5" />
-                                <img src="/images/ben5.jpg" width="100" alt="Benkyozer Screen 6" />
+                                <img src={ben6} width="100" alt="Benkyozer Screen 1" />
+                                <img src={ben1} width="100" alt="Benkyozer Screen 2" />
+                                <img src={ben2} width="100" alt="Benkyozer Screen 3" />
+                                <img src={bn3} width="100" alt="Benkyozer Screen 4" />
+                                <img src={ben4} width="100" alt="Benkyozer Screen 5" />
+                                <img src={ben5} width="100" alt="Benkyozer Screen 6" />
                             </div>
                         </div>
                     </div>
@@ -121,10 +138,10 @@ const ProjectsModal = ({ onClose }) => {
                             </div>
                         </div>
                         <div id="tab3-p" className="paper right">
-                            <img src="/images/clo1 (1).png" width="400" alt="Ticketer Screen 1" />
-                            <img src="/images/clo2.png" width="400" alt="Ticketer Screen 2" />
-                            <img src="/images/clo3.png" width="400" alt="Ticketer Screen 3" />
-                            <img src="/images/clo4.png" width="400" alt="Ticketer Screen 4" />
+                            <img src={clo1} width="400" alt="Ticketer Screen 1" />
+                            <img src={clo2} width="400" alt="Ticketer Screen 2" />
+                            <img src={clo3} width="400" alt="Ticketer Screen 3" />
+                            <img src={clo4} width="400" alt="Ticketer Screen 4" />
                         </div>
                     </div>
 
