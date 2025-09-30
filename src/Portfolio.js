@@ -122,17 +122,17 @@ const Portfolio = () => {
 
 
                 {/* Stars */}
-                <img src="/images/star-outline.png" alt="Star" className="star-outline " />
-                <img src="/images/star-outline-1.png" alt="Star" className="star-outline-1 " />
-                <img src="/images/star-filled.png" alt="Star" className="star-filled-1 parallax" />
-                <img src="/images/star-filled.png" alt="Star" className="star-filled-2 parallax" />
-                <img src="/images/deco1.png" alt="Star" className="star-filled-3 parallax" />
-                <img src="/images/deco1.png" alt="Star" className="star-filled-4 parallax" />
-                <img src="/images/deco1.png" alt="Star" className="star-filled-5 parallax" />
-                <img src="/images/deco1.png" alt="Star" className="star-filled-6 parallax" />
-                <img src="/images/deco2.png" alt="Star" className="star-filled-7 parallax" />
-                <img src="/images/deco2.png" alt="Star" className="star-filled-8 parallax" />
-                <img src="/images/deco2.png" alt="Star" className="star-filled-9 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/star-outline.png`} alt="Star" className="star-outline " />
+                <img src={`${process.env.PUBLIC_URL}/images/star-outline-1.png`} alt="Star" className="star-outline-1 " />
+                <img src={`${process.env.PUBLIC_URL}/images/star-filled.png`} alt="Star" className="star-filled-1 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/star-filled.png`} alt="Star" className="star-filled-2 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-3 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-4 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-5 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-6 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-7 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-8 parallax" />
+                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-9 parallax" />
             </div>
 
             {/* Modals */}
