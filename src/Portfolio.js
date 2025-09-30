@@ -6,6 +6,24 @@ import SkillsModal from './components/SkillsModal';
 import ContactWidget from './components/ContactWidget';
 import Notification from './components/Notification';
 
+// Import all images from src/images
+import folder1 from './images/folder1.png';
+import folder2 from './images/folder2.png';
+import folder4 from './images/folder4.png';
+import portfolioName from './images/portfolioName.png';
+import profileFrame from './images/profile-frame.png';
+import imKavya from './images/ImKavya.png';
+import boww from './images/boww.png';
+import jellyfish from './images/jellyfish.png';
+import uzumaki from './images/uzumaki.png';
+import charac from './images/charac.png';
+import hearts from './images/hearts.png';
+import starOutline from './images/star-outline.png';
+import starOutline1 from './images/star-outline-1.png';
+import starFilled from './images/star-filled.png';
+import deco1 from './images/deco1.png';
+import deco2 from './images/deco2.png';
+
 const Portfolio = () => {
     const [activeModal, setActiveModal] = useState(null);
     const [notification, setNotification] = useState(null);
@@ -76,7 +94,7 @@ const Portfolio = () => {
                 <div className="folder-nav">
                     <div className="folder-item">
                         <img
-                            src="/images/folder1.png"
+                            src={folder1}
                             alt="About"
                             className="folder"
                             onClick={() => openModal('about')}
@@ -86,7 +104,7 @@ const Portfolio = () => {
 
                     <div className="folder-item">
                         <img
-                            src="/images/folder4.png"
+                            src={folder4}
                             alt="Projects"
                             className="folder"
                             onClick={() => openModal('projects')}
@@ -96,7 +114,7 @@ const Portfolio = () => {
 
                     <div className="folder-item">
                         <img
-                            src="/images/folder2.png"
+                            src={folder2}
                             alt="Skills"
                             className="folder"
                             onClick={() => openModal('skills')}
@@ -105,34 +123,34 @@ const Portfolio = () => {
                     </div>
                 </div>
                 {/* Portfolio title */}
-                <img src="/images/portfolioName.png" alt="Portfolio" className="portfolio-title" />
+                <img src={portfolioName} alt="Portfolio" className="portfolio-title" />
 
                 {/* Central character frame */}
-                <img src="/images/profile-frame.png" alt="Character Frame" className="character-frame" />
+                <img src={profileFrame} alt="Character Frame" className="character-frame" />
 
                 {/* Hello text */}
-                <img src="/images/ImKavya.png" alt="Hello, I'm Kavya" className="hello-text" />
+                <img src={imKavya} alt="Hello, I'm Kavya" className="hello-text" />
 
                 {/* Decorative elements */}
-                <img src="/images/boww.png" alt="Ribbon Bow" className="ribbon-bow" />
-                <img src="/images/jellyfish.png" alt="Jellyfish" className="jellyfish" />
-                <img src="/images/uzumaki.png" alt="uzumaki" className="uzumaki" />
-                <img src="/images/charac.png" alt="Character" className="cute-character" />
-                <img src="/images/hearts.png" alt="Pixel Gems" className="hearts" />
+                <img src={boww} alt="Ribbon Bow" className="ribbon-bow" />
+                <img src={jellyfish} alt="Jellyfish" className="jellyfish" />
+                <img src={uzumaki} alt="uzumaki" className="uzumaki" />
+                <img src={charac} alt="Character" className="cute-character" />
+                <img src={hearts} alt="Pixel Gems" className="hearts" />
 
 
                 {/* Stars */}
-                <img src={`${process.env.PUBLIC_URL}/images/star-outline.png`} alt="Star" className="star-outline " />
-                <img src={`${process.env.PUBLIC_URL}/images/star-outline-1.png`} alt="Star" className="star-outline-1 " />
-                <img src={`${process.env.PUBLIC_URL}/images/star-filled.png`} alt="Star" className="star-filled-1 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/star-filled.png`} alt="Star" className="star-filled-2 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-3 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-4 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-5 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco1.png`} alt="Star" className="star-filled-6 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-7 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-8 parallax" />
-                <img src={`${process.env.PUBLIC_URL}/images/deco2.png`} alt="Star" className="star-filled-9 parallax" />
+                <img src={starOutline} alt="Star" className="star-outline " />
+                <img src={starOutline1} alt="Star" className="star-outline-1 " />
+                <img src={starFilled} alt="Star" className="star-filled-1 parallax" />
+                <img src={starFilled} alt="Star" className="star-filled-2 parallax" />
+                <img src={deco1} alt="Star" className="star-filled-3 parallax" />
+                <img src={deco1} alt="Star" className="star-filled-4 parallax" />
+                <img src={deco1} alt="Star" className="star-filled-5 parallax" />
+                <img src={deco1} alt="Star" className="star-filled-6 parallax" />
+                <img src={deco2} alt="Star" className="star-filled-7 parallax" />
+                <img src={deco2} alt="Star" className="star-filled-8 parallax" />
+                <img src={deco2} alt="Star" className="star-filled-9 parallax" />
             </div>
 
             {/* Modals */}
