@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.skills-modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.3s ease;
+}
+
+.skills-computer-wrapper {
+    margin: 3% auto;
+    width: fit-content;
+}
+
+.skills-computer {
+    width: 700px;
+    font-family: calibri, verdana, arial;
+    font-size: 10px;
+    color: #CA8E83;
+    letter-spacing: 1px;
+    line-height: 12px;
+}
+
+.navigation {
+    background: #A9BAD8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#menu {
+    background: transparent;
+    font: normal 11px 'silkscreen', monospace, georgia;
+    text-transform: uppercase;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.close-btn {
+    background: #FFEBF1;
+    color: #C5779C;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.sitename {
+    color: #888;
+    background: #fff;
+    padding: 8px;
+    border-right: 1px solid #C6D9EC;
+    border-left: 1px solid #C6D9EC;
+    line-height: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.topboxes {
+    background: #FFEBF1;
+    color: #C69183;
+    border-bottom: 1px solid #C6D9EC;
+    border-left: 1px solid #C6D9EC;
+    border-right: 1px solid #C6D9EC;
+    overflow: hidden;
+}
+
+.topscrollbox {
+    height: 120px;
+    overflow: auto;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.title {
+    background: transparent;
+    text-transform: lowercase;
+    font-family: georgia, monospace, arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #E0A1B3;
+    line-height: 12px;
+    padding: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.skill-item-compact {
+    margin-bottom: 6px;
+    font-size: 10px;
+}
+
+.skill-item-compact b {
+    font-weight: bold;
+    color: #A9BAD8;
+}
+
+.content-area {
+    background: #fff;
+    border-left: 1px solid #C6D9EC;
+    border-right: 1px solid #C6D9EC;
+    overflow: hidden;
+}
+
+.sidebar-area {
+    background: #fff;
+    border-right: 1px solid #C6D9EC;
+    overflow: hidden;
+}
+
+.scrollbox {
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.skill-detail {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #A9BAD8;
+}
+
+.skill-bar {
+    background: #F4C9D5;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #A9BAD8;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.skill-percentage {
+    font-size: 9px;
+    text-align: right;
+    color: #C69183;
+}
+
+.sidebar-area b {
+    color: #A9BAD8;
+    font-weight: bold;
+}
+
+.sidebar-area i {
+    color: #C35187;
+    font-style: normal;
+}
+
+.bottom {
+    background: #A9BAD8;
+    color: #fff;
+    border-top: 1px solid #C6D9EC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F4C9D5;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .skills-computer {
+        width: 95%;
+    }
+}

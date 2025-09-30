@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    cursor: url(https://proxy.everskies.com/a/https://64.media.tumblr.com/6e67c289a6a7b63ad74011405789fd02/ce4251bfdc2af186-8e/s75x75_c1/91f0f3078558d96787216cc72568b9b3990d09e1.gifv), auto !important;
+}
+
+.portfolio-container {
+    background-image: url('https://i.pinimg.com/736x/c9/a1/b1/c9a1b113445cbba294ba9885af96f0eb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Comic Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Folder navigation */
+.folder-nav {
+    position: relative;
+    left: 50px;
+    top: 50%;
+    z-index: 15;
+    transform: translateY(-50%);
+
+}
+
+.folder {
+    width: 150px;
+    height: auto;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* Individual folder positions */
+.folder-1 {
+    position: absolute;
+    left: -100px;
+    top: -300px;
+
+    width: 200px;  /* Can also customize size */
+}
+
+.folder-2 {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    width: 200px;
+
+}
+
+.folder-3 {
+    position: absolute;
+    right: -120px;  /* Different side */
+    top: 50px;
+    width: 250px;
+
+}
+
+.folder-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.folder-label {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    color: #665566;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+
+.folder:hover {
+    transform: translateX(10px) scale(1.1);
+}
+
+/* Portfolio title */
+.portfolio-title {
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 350px;
+    z-index: 5;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Decorative ribbon bow */
+.ribbon-bow {
+    position: absolute;
+    top: 55px;
+    right: 570px;
+    width: 100px;
+    height: auto;
+    z-index: 10;
+    animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+/* Central character frame */
+.character-frame {
+    position: relative;
+    top: 55%;  /* Vertical position */
+    left: 44%;  /* Horizontal position */
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    width: 1200px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+}
+
+/* Hello text */
+.hello-text {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    width: 280px;
+    height: auto;
+    z-index: 5;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Jellyfish */
+.jellyfish {
+    position: absolute;
+    top: 20px;
+    right: 290px;
+    width: 250px;
+    height: auto;
+    z-index: 4;
+    animation: jellyfish-float 4s ease-in-out infinite;
+}
+
+@keyframes jellyfish-float {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    33% { transform: translateY(-20px) translateX(10px); }
+    66% { transform: translateY(-10px) translateX(-5px); }
+}
+
+/* Coffee cup */
+.uzumaki {
+    position: absolute;
+    bottom: 100px;
+    left: 640px;
+    width: 125px;
+    height: auto;
+    z-index: 11;
+    animation: steam 2s ease-in-out infinite;
+}
+
+@keyframes steam {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Cute character */
+.cute-character {
+    position: absolute;
+    bottom: 100px;
+    left: 370px;
+    width: 150px;
+    height: auto;
+    z-index: 11;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Pixel gems */
+.hearts {
+    position: absolute;
+    top: 200px;
+    right: 350px;
+    width: 125px;
+    height: auto;
+    z-index: 11;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(10deg); }
+}
+
+/* Stars */
+.star-outline {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 100px;
+    height: auto;
+    z-index: 11; /* Changed from 11 to 1 */
+    animation: rotate 6s linear infinite;
+}
+
+.star-outline-1 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 200px;
+    height: auto;
+    z-index: 11; /* Changed from 11 to 1 */
+    animation: rotate 6s linear infinite;
+}
+
+.star-filled-1 {
+    position: absolute;
+    top: -20%;
+    right: 0%;
+    width: 800px;
+    height: auto;
+    z-index: 1; /* Changed from 98 to 1 */
+
+}
+
+.star-filled-2 {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    width: 300px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-3 {
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-4 {
+    position: absolute;
+    top: -10%;
+    right: 45%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-5 {
+    position: absolute;
+    top: 0%;
+    right: 80%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-6 {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-7 {
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-8 {
+    position: absolute;
+    top: 50%;
+    right: 75%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+.star-filled-9 {
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Changed from 38 to 1 */
+
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.parallax {
+    /*transition: transform 0.2s ease-out;*/
+    will-change: transform;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .folder-nav {
+        left: 20px;
+        gap: 20px;
+    }
+
+    .folder {
+        width: 60px;
+    }
+
+    .portfolio-title {
+        width: 250px;
+        top: 50px;
+    }
+
+    .character-frame {
+        width: 300px;
+    }
+
+    .hello-text {
+        width: 200px;
+        bottom: 50px;
+        right: 20px;
+    }
+
+    .ribbon-bow {
+        width: 50px;
+        right: 150px;
+    }
+
+    .jellyfish {
+        width: 80px;
+        right: 80px;
+    }
+
+    .hearts {
+        width: 80px;
+        right: 20px;
+    }
+
+
+}

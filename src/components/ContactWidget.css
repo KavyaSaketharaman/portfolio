@@ -1,0 +1,238 @@
+@font-face {
+    font-family: sweety;
+    src: url(https://dl.dropbox.com/s/ijxda4xb1cyjpe4/KGAlwaysAGoodTime.ttf);
+}
+
+@font-face {
+    font-family: good-time;
+    src: url(https://dl.dropbox.com/s/ijxda4xb1cyjpe4/KGAlwaysAGoodTime.ttf);
+}
+
+@font-face {
+    font-family: 'Magica';
+    src: url(https://static.tumblr.com/p6yopnt/Qkiqnu0r5/theheart.ttf);
+}
+
+#contact-holder {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    width: 10em;
+    height: 10em;
+    z-index: 999;
+}
+
+.contact-container,
+.contact-box,
+#contact-music-player {
+    transition: all 2s ease;
+    transition-timing-function: cubic-bezier(0.75, 0.45, 0.05, 1);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact-container,
+.contact-box {
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0.625em rgba(69, 102, 181, 0.35) inset,  /* Changed from pink rgba(181, 69, 102) to blue */
+    0 0 0.5em rgba(69, 102, 181, 1);
+}
+
+.contact-item2 {
+    transition-delay: 0.25s;
+}
+
+.contact-item3 {
+    transition-delay: 0.5s;
+}
+
+#contact-holder:hover .contact-container {
+    transform: rotate(-360deg) translateX(3.5em);
+    animation: blur 0.5s;
+}
+
+#contact-holder:hover .contact-item1 {
+    transform: translate(-2.5em, -8.25em);
+}
+
+#contact-holder:hover .contact-item2 {
+    transform: translate(-6.5em, 0);
+}
+
+#contact-holder:hover .contact-item3 {
+    transform: translate(-2.5em, 8.25em);
+}
+
+
+
+.contact-container {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.pinimg.com/1200x/6a/6f/78/6a6f78c69ccae4bde168ae8290a2dfc3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0.625em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container svg {
+    fill: #39a9cf;
+    opacity: 0.85;
+    transform-origin: center;
+    width: 100%;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.contact-box {
+    position: absolute;
+    z-index: 2;
+    height: 60%;
+    width: 60%;
+    background: white;
+    overflow: auto;
+    padding: 2em 0.625em;
+    text-align: center;
+}
+
+.contact-box p {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    transition-delay: 2s;
+    font-family: 'Magica';
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-box a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+#contact-holder:hover .contact-box p {
+    opacity: 1;
+}
+
+#contact-music-player {
+    position: absolute;
+    background: linear-gradient(#99B7FF 20%, white);
+    width: 6em;
+    height: 2em;
+    display: inline-flex;
+    border-radius: 0.875em;
+    padding: 0.125em;
+    transition-delay: 0.75s;
+}
+
+#contact-holder:hover #contact-music-player {
+    transform: translate(-5.5em, 9em);
+}
+
+#section01,
+#section02 {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section01 {
+    margin-right: 0.125em;
+    flex: 33%;
+}
+
+#section02 p {
+    transform: translateX(100%);
+    animation: marquee 6s linear infinite;
+    font-family: good-time;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+#section02 {
+    flex: 66%;
+}
+
+#section01 img {
+    height: 1.5em;
+    cursor: pointer;
+}
+
+#section01 img:hover {
+    animation: rotating 0.3s linear infinite;
+}
+
+.contact-box h3 {
+    color: #99B7FF;
+    text-shadow: 0 0 1px black;
+    padding: 0.125em;
+    font-family: 'Magica';
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0);
+    }
+    100% {
+        filter: blur(5px);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(-25deg);
+    }
+    66% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact-holder {
+        bottom: 10px;
+        right: 10px;
+        width: 10em;
+        height: 10em;
+    }
+}

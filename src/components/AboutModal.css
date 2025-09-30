@@ -1,0 +1,234 @@
+/* Modal background */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.3s ease;
+}
+
+/* Modal content area */
+.modal-content {
+    margin: 5% auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: fit-content;
+    position: relative;
+}
+
+/* Close button style */
+.close {
+    position: absolute;
+    bottom: 325px;
+    right: 20%;
+
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1500;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    background: #ff5555;
+    color: #fff;
+}
+
+.body {
+    transform: scale(1.3);
+    transform-origin: center center;
+    padding: 10px;
+    margin: auto;
+    width: 390px;
+    height: 400px;
+    padding-top: 20px;
+}
+
+.header {
+    background: #fffcfd;
+    height: 30px;
+    width: 380px;
+    border-radius: 10px;
+    filter: drop-shadow(#e0d4db 1px 0px 0px) drop-shadow(#e0d4db 0px 1px 0px);
+    position: absolute;
+}
+
+.searchbar {
+    background: white;
+    height: 20px;
+    width: 190px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    filter: drop-shadow(#e0d4db -1px 0px 0px) drop-shadow(#e0d4db 0px -1px 0px);
+    color: #625f5f;
+    font-size: 11px;
+    font-family: 'MS UI Gothic', sans-serif;
+    line-height: 22px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+.searchbutton {
+    background: #f8f5f6;
+    height: 20px;
+    width: 70px;
+    border-radius: 10px;
+    filter: drop-shadow(1px 0px 0px) drop-shadow(0px 1px 0px) drop-shadow(-1px 0px 0px) drop-shadow(0px -1px 0px);
+    margin-top: 5px;
+    margin-left: 220px;
+    position: absolute;
+    font-size: 11px;
+    font-family: 'MS UI Gothic', sans-serif;
+    line-height: 22px;
+    text-align: center;
+    color: #625f5f;
+}
+
+.houseicon, .hearticon, .menuicon {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-top: 7px;
+    filter: invert(1) brightness(70%) sepia(1) hue-rotate(-50deg) grayscale(90%);
+}
+
+.houseicon {
+    margin-left: 115px;
+}
+
+.hearticon {
+    margin-left: 135px;
+}
+
+.menuicon {
+    margin-left: 155px;
+}
+
+.box {
+    background: #fffcfd;
+    height: 235px;
+    width: 380px;
+    border-radius: 10px;
+    filter: drop-shadow(#e0d4db 1px 0px 0px) drop-shadow(#e0d4db 0px 1px 0px);
+    position: absolute;
+    margin-top: 35px;
+}
+
+.pfp {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -175px;
+    margin-top: 10px;
+    filter: drop-shadow(#cbbcc5 -1px 0px 0px) drop-shadow(#cbbcc5 0px -1px 0px) drop-shadow(white 1px 0px 0px) drop-shadow(white 0px 1px 0px);
+}
+
+.status {
+    width: 125px;
+    color: #a49c9e;
+    font-size: 11px;
+    font-family: 'MS UI Gothic', sans-serif;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.biobox {
+    background: white;
+    height: 55px;
+    width: 125px;
+    border-radius: 10px;
+    margin-left: 9px;
+    margin-top: 165px;
+    border: 1px dotted #e0d4db;
+    position: absolute;
+}
+
+.biotext {
+    color: #625f5f;
+    font-size: 9px;
+    font-family: 'MS UI Gothic', sans-serif;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.aboutme {
+    background: white;
+    height: 90px;
+    width: 215px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 5px;
+
+    border: 1px dotted #e0d4db;
+    position: absolute;
+}
+
+.aboutmetext {
+    color: #625f5f;
+    font-size: 11px;
+    font-family: 'MS UI Gothic', sans-serif;
+    position: absolute;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 80px;
+}
+
+.dni {
+    background: white;
+    height: 50px;
+    width: 215px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 100px;
+    border: 1px dotted #e0d4db;
+    position: absolute;
+}
+
+.dnitext {
+    color: #625f5f;
+    font-size: 11px;
+    font-family: 'MS UI Gothic', sans-serif;
+    position: absolute;
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
