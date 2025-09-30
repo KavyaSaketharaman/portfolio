@@ -232,3 +232,28 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+
+
+@media (max-width: 768px) {
+    .body {
+        transform: scale(0.9);  /* Scales down entire modal by 10% */
+        width: 350px;           /* Was 390px */
+    }
+
+    .close {
+        bottom: 300px;          /* Repositioned */
+        right: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        transform: scale(0.7);  /* Scales down by 30% for phones */
+        width: 320px;
+    }
+
+    /* All text elements have reduced font sizes */
+    .biotext { font-size: 8px; }    /* Was 9px */
+    .aboutmetext { font-size: 10px; }  /* Was 11px */
+}

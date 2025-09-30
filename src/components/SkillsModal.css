@@ -205,6 +205,21 @@
 
 @media (max-width: 768px) {
     .skills-computer {
-        width: 95%;
+        width: 95%;              /* Responsive width */
+        font-size: 9px;          /* Was 10px */
     }
+
+    .topscrollbox { height: 80px; }   /* Was 120px */
+    .scrollbox { height: 200px; }     /* Was 300px */
+
+    /* All text scaled down proportionally */
+}
+
+@media (max-width: 480px) {
+    .skills-computer {
+        width: 98%;
+        font-size: 8px;          /* Even smaller */
+    }
+
+    .scrollbox { height: 180px; }
 }

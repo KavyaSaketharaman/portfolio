@@ -383,3 +383,260 @@
 
 
 }
+
+/* ← ADD THE MOBILE STYLES RIGHT HERE, AFTER THE LAST EXISTING STYLE */
+
+/* ============================================ */
+/* MOBILE RESPONSIVE STYLES */
+/* ============================================ */
+
+/* Tablets and smaller (iPad, smaller laptops) */
+@media (max-width: 1024px) {
+    .container {
+        height: 90vh;
+    }
+
+    .character-frame {
+        width: 800px;
+    }
+
+    .portfolio-title {
+        width: 280px;
+        top: 60px;
+        left: 20%;
+    }
+
+    .folder-nav {
+        left: 30px;
+        gap: 15px;
+    }
+
+    .folder {
+        width: 120px;
+    }
+
+    .folder-label {
+        font-size: 16px;
+    }
+
+    .ribbon-bow {
+        width: 80px;
+        right: 400px;
+        top: 40px;
+    }
+
+    .jellyfish {
+        width: 180px;
+        right: 200px;
+    }
+
+    .hearts {
+        width: 100px;
+        right: 250px;
+    }
+
+    .hello-text {
+        width: 220px;
+        bottom: 60px;
+        right: 60px;
+    }
+
+    .uzumaki {
+        width: 100px;
+        left: 450px;
+    }
+
+    .cute-character {
+        width: 120px;
+        left: 280px;
+    }
+}
+
+/* Mobile phones in landscape and small tablets */
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 10px;
+        background-attachment: scroll;
+    }
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+    }
+
+    /* Stack folders vertically at bottom */
+    .folder-nav {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        top: auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .folder {
+        width: 80px;
+    }
+
+    .folder-label {
+        font-size: 12px;
+    }
+
+    /* Center title at top */
+    .portfolio-title {
+        width: 200px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Center character frame */
+    .character-frame {
+        width: 90vw;
+        max-width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Hello text */
+    .hello-text {
+        width: 160px;
+        bottom: 120px;
+        right: 20px;
+    }
+
+    /* Hide or reposition decorative elements */
+    .ribbon-bow {
+        width: 60px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .jellyfish {
+        width: 120px;
+        top: 15%;
+        right: 10px;
+    }
+
+    .uzumaki {
+        width: 70px;
+        bottom: 120px;
+        left: 20px;
+    }
+
+    .cute-character {
+        width: 90px;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hearts {
+        width: 70px;
+        top: 15%;
+        left: 10px;
+        right: auto;
+    }
+
+    /* Reduce star sizes */
+    .star-outline {
+        width: 60px;
+        top: 30%;
+        left: 10%;
+    }
+
+    .star-outline-1 {
+        width: 100px;
+        top: 10%;
+        left: 20%;
+    }
+
+    .star-filled-1,
+    .star-filled-2 {
+        width: 150px;
+    }
+
+    .star-filled-3,
+    .star-filled-4,
+    .star-filled-5,
+    .star-filled-6,
+    .star-filled-7,
+    .star-filled-8,
+    .star-filled-9 {
+        width: 50px;
+    }
+
+    /* Disable parallax on mobile */
+    .parallax {
+        transform: none !important;
+    }
+}
+
+/* Small phones in portrait */
+@media (max-width: 480px) {
+    .portfolio-title {
+        width: 160px;
+        top: 15px;
+    }
+
+    .character-frame {
+        width: 95vw;
+        max-width: 400px;
+    }
+
+    .folder-nav {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .folder {
+        width: 70px;
+    }
+
+    .folder-label {
+        font-size: 11px;
+    }
+
+    .hello-text {
+        width: 140px;
+        bottom: 110px;
+        right: 10px;
+    }
+
+    .ribbon-bow,
+    .jellyfish,
+    .uzumaki,
+    .cute-character,
+    .hearts {
+        display: none; /* Hide decorative elements on very small screens */
+    }
+
+    .star-outline,
+    .star-outline-1 {
+        width: 50px;
+    }
+
+    .star-filled-1,
+    .star-filled-2 {
+        width: 100px;
+    }
+
+    .star-filled-3,
+    .star-filled-4,
+    .star-filled-5,
+    .star-filled-6,
+    .star-filled-7,
+    .star-filled-8,
+    .star-filled-9 {
+        width: 40px;
+    }
+}

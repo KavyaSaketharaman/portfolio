@@ -227,12 +227,26 @@
     }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     #contact-holder {
-        bottom: 10px;
-        right: 10px;
-        width: 10em;
-        height: 10em;
+        bottom: 90px;           /* NEW - moved from center */
+        right: 15px;
+        top: auto;              /* Removes top positioning */
+        transform: none;
+        width: 8em;             /* Was 10em */
+        height: 8em;
+    }
+
+    /* Adjusted hover positions for mobile */
+    #contact-holder:hover .contact-item1 {
+        transform: translate(-2em, -6.5em);  /* Closer */
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-holder {
+        bottom: 80px;
+        width: 7em;             /* Even smaller */
+        height: 7em;
     }
 }

@@ -130,27 +130,30 @@
     color: #fff;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .modal-content.ps-vita {
-        width: 95%;
+        width: 95%;              /* Responsive width */
         margin: 10% auto;
     }
 
     .vita-screen {
-        font-size: 12px;
-        padding: 10px;
+        font-size: 12px;         /* Was 14px */
+        padding: 10px;           /* Was 15px */
+        /* Screen position adjusted for mobile */
+        top: 20%;
+        left: 13%;
+        width: 74%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .vita-screen {
+        font-size: 10px;         /* Even smaller */
+        padding: 8px;
     }
 
-    .vita-screen h2 {
-        font-size: 16px;
-    }
-
-    .contact-item {
-        margin-bottom: 10px;
-    }
-
-    .contact-item ul {
-        margin-left: 15px;
+    .contact-item li {
+        font-size: 9px;          /* Readable on small screens */
     }
 }
